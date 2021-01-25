@@ -2,7 +2,7 @@
 const router = require('express').Router();
 const jokes = require('./jokes-data');
 
-router.get('/', (req, res) => {
+router.get('/joke', (req, res) => {
   res.status(200).json(jokes);
 });
 
